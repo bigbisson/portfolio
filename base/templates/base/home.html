@@ -10,22 +10,47 @@
     <link href="{% static '/css/main.css' %}" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
 </head>
+
+<!-- <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header"></div>
+    </div>
+</nav> -->
 
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-md-3">
+            <article class="col-md-3">
                 <div class="card card-body h-100 border-info" id="profile-wrapper">
-                    <img id="profile-pic" src="{% static 'images/profile2.jpg' %}">
+                    <img id="profile-pic" src="{% static 'images/profile.jpg' %}">
                     <br>
                     <h4>Hi I'm Indra Nurwibisono!</h4>
                     <p>Indonesian person, Data Engineer and Web Developer</p>
+                    <ul class="social-links">
+                        <li><a href="mailto:bigmasterindra@yahoo.com"><img class="social"
+                                    src="{% static 'images/mail.png' %}" alt="eMail"></a></li>
+                        <li><a href="https://www.linkedin.com/in/indranw/" target="_blank"><img class="social"
+                                    src="{% static 'images/linkedin.png' %}" alt="Linkedin"></a></li>
+                        <li><a href="https://twitter.com/Big_Bisson" target="_blank"><img class="social"
+                                    src="{% static 'images/twitter.png' %}" alt="Twitter"></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCnoeHiOEtvEY-l841vqBRGA" target="_blank"><img
+                                    class="social" src="{% static 'images/youtube.png' %}" alt="Youtube"></a></li>
+                        <li><a href="https://github.com/bigbisson/" target="_blank"><img class="social"
+                                    src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png"
+                                    alt="Github"></a></li>
+                    </ul>
                 </div>
-            </div>
-            <div class="col-md-9">
-                <div class="card card-body h-100 border-info">
-                    <h4>My Experience as First Data Engineer</h4>
+            </article>
+            <article class="col-md-9">
+                <div class="card card-body h-100">
+                    <h3>My Experience as First Data Engineer</h3>
                     <br>
                     <p>My first job as a data engineer is to find data about the city's public transportation or Angkot
                         (Angkutan Kota) for indonesians.</p>
@@ -37,23 +62,19 @@
                     <p>Initially there was no thought that my project was part of data science, after graduating I
                         continued to explore this knowledge to become a junior data engineer.</p>
 
-                    <ul class="social-links">
-                        <li><a href="https://www.linkedin.com/in/indranw/" target="_blank"><img class="social" src="{% static 'images/linkedin.png' %}" alt="Linkedin"></a></li>
-                        <li><a href="https://twitter.com/Big_Bisson" target="_blank"><img class="social" src="{% static 'images/twitter.png' %}" alt="Twitter"></a></li>
-                        <li><a href="https://www.youtube.com/channel/UCnoeHiOEtvEY-l841vqBRGA" target="_blank"><img class="social" src="{% static 'images/youtube.png' %}" alt="Youtube"></a></li>
-                        <li><a href="https://github.com/bigbisson/" target="_blank"><img class="social" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png" alt="Github"></a></li>
-                    </ul>
+
 
                 </div>
-            </div>
+            </article>
         </div>
         <br>
         <div class="row">
             <div class="col-md-6">
                 <div class="card card-body h-100">
-                    <h5>My Experience as Junior Data Engineer</h5>
+                    <h4>My Experience as Junior Data Engineer</h4>
                     <br>
-                    <p>Trainees in Big Data Analytics Program and Python Online Academy Program from goverment program (Digi Talent
+                    <p>Trainees in Big Data Analytics Program and Python Online Academy Program from goverment program
+                        (Digi Talent
                         Scholarship).</p>
                     <p>Analysis simple data set with python and jupyter notebook with Data Mining and Machine Learning.
                     </p>
@@ -61,7 +82,7 @@
             </div>
             <div class="col-md-6">
                 <div class="card card-body h-100">
-                    <h5>Languages and Tools I used</h5>
+                    <h4>Languages and Tools I used</h4>
                     <br>
                     <p>Python, Django, HTML/CSS, JavaScript/Jquery, PHP, Laravel, SQL, AWS and APIs such as twitter also
                         git and terminal.</p>
@@ -73,7 +94,7 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="card card-body h-100">
-                    <h5>How I Learn</h5>
+                    <h4>How I Learn</h4>
                     <br>
                     <p>Reverse Engineer and Build Prototype</p>
                     <p>I learn anything by having reference final product. I copy paste a section of the code to know
@@ -82,7 +103,7 @@
             </div>
             <div class="col-md-6">
                 <div class="card card-body h-100">
-                    <h5>My Current Goals</h5>
+                    <h4>My Current Goals</h4>
                     <br>
                     <p>Finding more challenge <b>(Get a Job)</b> and collaborate to more Open Source Project to get more
                         knowledge about team work and contribution to the programming world.</p>
