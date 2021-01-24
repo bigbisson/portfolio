@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: indranw.herokuapp.com
-Token: d7d8e8b46cac651023bfaa377ca0d379635d47d9bc3ef94f2eb1055850327be2
